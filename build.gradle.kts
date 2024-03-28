@@ -31,9 +31,9 @@ dependencies {
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm")
     implementation("io.ktor:ktor-server-content-negotiation-jvm")
-    implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
-    implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
-    implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
+    implementation("org.jetbrains.exposed:exposed-dao:0.41.1")
+    implementation("org.jetbrains.exposed:exposed-core:0.41.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.41.1")
     implementation("com.h2database:h2:2.1.214")
     implementation("io.ktor:ktor-serialization-gson-jvm")
     implementation("io.ktor:ktor-server-auth-jvm")
@@ -44,7 +44,8 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 
     // POSTGRESQL
-    implementation("org.postgresql:postgresql:$postgresql_driver_version")
+    implementation("org.postgresql:postgresql:42.2.23")
     //HIKARI
-    implementation("com.zaxxer:HikariCP:$hikari_version")
+    implementation("com.zaxxer:HikariCP:5.0.1")
+    
 }
