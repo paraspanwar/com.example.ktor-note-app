@@ -47,5 +47,9 @@ dependencies {
     implementation("org.postgresql:postgresql:42.2.23")
     //HIKARI
     implementation("com.zaxxer:HikariCP:5.0.1")
-    
+
+    // Authorization - JWT
+    implementation("io.ktor:ktor-auth:1.6.8")
+    implementation("io.ktor:ktor-auth-jwt:1.6.8")
+
 }

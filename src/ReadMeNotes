@@ -1,0 +1,62 @@
+#JWT implementation (Json Web Token)
+
+## Authentication  & Authorization
+
+Authentication - Who are you ?
+Authorization - What you have access to !!
+
+Structure-
+    #Header
+    #Payload
+    #Signaturre
+
+Example: "AAAAA.BBBBB.CCCCC"
+
+
+### Header -
+    # Signing Algorithm
+    # Type
+
+example -
+    {
+        "alg": "HS256",
+        "type": "JWT"
+    }
+
+
+### Payload -
+    {
+        "sub": "123456",
+        "name": "Paras",
+        "admin": true
+    }
+
+# Claims - 3 types :
+
+1.Registered Claims
+    # iss(issuer)
+    # exp(expiration time)
+    # sub(subject)
+    # aud(audience)
+
+2. Public Claims
+    # IANA JSON Web Token Registry
+
+3. Private Claims
+    # Email
+    # Registration number
+
+
+### Signature -
+
+example -
+        HMACSHA256(
+            base64UrlEncode(header) + "." +
+            base64UrlEncode(payload),
+            secret
+        )
+
+
+
+
+
