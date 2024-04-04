@@ -52,4 +52,7 @@ dependencies {
     implementation("io.ktor:ktor-auth:1.6.8")
     implementation("io.ktor:ktor-auth-jwt:1.6.8")
 
+    // Location dependencies
+    implementation("io.ktor:ktor-locations:1.6.4")
+
 }
